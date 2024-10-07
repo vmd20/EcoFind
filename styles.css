@@ -1,0 +1,345 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #00e6a1;
+    padding: 20px;
+    color: white;
+}
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #00e6a1;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #17875c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3em;
+    color: #17875c; /* Verde caqui */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Categories carousel */
+#categories {
+    display: flex;
+    justify-content: center;
+    background-color: #e8f5e9;
+    padding: 15px 0;
+}
+
+#categories button {
+    background-color: #17875c;
+    border: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#categories button:hover {
+    background-color: #17875c;
+}
+#carousel-container {
+    overflow: hidden; /* Hide the overflow to create the scrolling effect */
+    white-space: nowrap;
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Add some spacing around the carousel */
+    position: relative;
+}
+
+#carousel {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite; /* Create continuous scroll */
+}
+
+#carousel span {
+    display: inline-block;
+    font-size: 1.5em%;
+    color: #d922c4; /* Verde caqui */
+    margin: 0 50px; /* Space between words */
+    font-family: 'Monaco'; /* Your desired font */
+}
+
+/* Animation keyframes for scrolling */
+@keyframes scroll {
+    from {
+        transform: translateX(100%); /* Start off the screen on the right */
+    }
+    to {
+        transform: translateX(-100%); /* Move off the screen to the left */
+    }
+}
+/* Business list */
+#business-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.business img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-color: #c8e6c9;
+}
+
+.business p {
+    margin-top: 10px;
+    color: #17875c;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #17875c;
+    padding: 10px 0;
+}
+
+footer button {
+    background-color: #17875c;
+    border: none;
+    padding: 10px 0px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    background-color: #17875c;
+}
+/* Business list */
+#business-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+    justify-items: center; /* Centrar los elementos */
+}
+
+.business img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    background-color: #c8e6c9;
+}
+
+.business p {
+    margin-top: 10px;
+    color: #17875c;
+}
+#profile-options ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+}
+
+#profile-options li {
+    background-color: #17875c;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#profile-options li:hover {
+    background-color: #17875c;
+}
+#chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#chat-box {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #f1f8e9;
+}
+
+#message-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#send-message {
+    padding: 10px 20px;
+    background-color: #17875c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-message:hover {
+    background-color: #17875c;
+}
+#map-container {
+    margin: 20px auto;
+    width: 100%;
+    height: 400px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #f9f6f1; /* Blanco roto */
+    font-family: 'Monaco', monospace; /* Fuente de Google */
+}
+
+h1, h2, h3 {
+    font-family: 'Monaco', monospace;
+    color: #17875c; /* Verde caqui para los títulos */
+}
+
+#business-list p {
+    color: #17875c; /* Verde caqui más oscuro */
+}
+
+button {
+    background-color: #17875c; /* Botones color verde caqui */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Monaco', monospace;
+}
+
+button:hover {
+    background-color: #17875c;
+}
+.business img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+}
+#business-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.business img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+}
+
+.business p {
+    text-align: center;
+    font-family: 'Monaco', monospace; /* We will fix the font next */
+    color: #556b2f;
+}
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.medal-icon {
+    width: 200px;
+    height: 200px;
+}
+
+/* Sección de detalles del negocio */
+#business-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.details-section {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.details-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.details-section p, .details-section ul {
+    font-size: 1em;
+}
+/* Contenedor de imagen */
+.business-image-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen */
+    padding: 20px;
+    max-width: 50%; /* Ajusta el ancho máximo de la imagen */
+}
+
+/* Ajustar la imagen para que no sea demasiado grande */
+.business-image {
+    width: 100%;
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Hace que la imagen se ajuste sin distorsionarse */
+    max-width: 500px; /* Limita el tamaño máximo de la imagen */
+    border-radius: 10px; /* Para esquinas redondeadas */
+}
+
